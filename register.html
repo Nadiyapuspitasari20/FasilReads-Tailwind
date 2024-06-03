@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>register</title>
+  </head>
+  <body>
+    <div class="flex items-center justify-center min-h-screen bg-[#a5f5e6]">
+      <div
+        class="relative flex flex-col m-6 space-y-8 bg-white shadow-2xl rounded-2xl md:flex-row md:space-y-0"
+      >
+        <!-- left side -->
+        <div class="flex flex-col justify-center p-8 md:p-14 md:flex-1">
+          <!-- Added md:flex-1 here -->
+          <span class="mb-3 text-4xl font-bold">Register Here</span>
+          <span class="font-light text-gray-400 mb-8">
+            Daftarkan dirimu segera!
+          </span>
+          <div class="py-4">
+            <span class="mb-2 text-md">NIM/NIP</span>
+            <input
+              type="text"
+              class="w-full p-2 border border-gray-300 rounded-md placeholder:font-light placeholder:text-gray-500"
+              name="nim/nip"
+              id="nim/nip"
+            />
+          </div>
+          <div class="py-4">
+            <span class="mb-2 text-md">Nama</span>
+            <input
+              type="text"
+              class="w-full p-2 border border-gray-300 rounded-md placeholder:font-light placeholder:text-gray-500"
+              name="username"
+              id="username"
+            />
+          </div>
+          <div class="py-4">
+            <span class="mb-2 text-md">Password</span>
+            <input
+              type="password"
+              name="pass"
+              id="pass"
+              class="w-full p-2 border border-gray-300 rounded-md placeholder:font-light placeholder:text-gray-500"
+            />
+          </div>
+          <div class="py-4">
+            <span class="mb-2 text-md">No WhatsApp</span>
+            <input
+              type="text"
+              class="w-full p-2 border border-gray-300 rounded-md placeholder:font-light placeholder:text-gray-500"
+              name="no_whatshapp"
+              id="no_whatsapp"
+            />
+          </div>
+          <button
+            class="w-full bg-black text-white p-2 rounded-lg mb-6 hover:bg-white hover:text-black hover:border hover:border-gray-300"
+          >
+            Register
+          </button>
+        </div>
+        <!-- right side -->
+        <div class="relative md:w-[500px]">
+          <!-- Added width setting for the image container -->
+          <img
+            src="assets/Welcome! (1).png"
+            alt="img"
+            class="w-full h-full rounded-r-2xl md:block object-fill"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
